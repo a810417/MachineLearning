@@ -1,0 +1,13 @@
+package com.tylu.ML;
+
+public class KmeansCluster {
+
+	private static final String TRAINING_DATASET_FILENAME = "kmeans/iris.arff";
+	public static void main(String[] args) {
+		try {
+		process();		
+		}
+		catch(Exception e) {e.printStackTrace();}
+	}
+
+}

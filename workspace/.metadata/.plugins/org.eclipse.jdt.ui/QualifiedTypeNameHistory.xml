@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="weka.attributeSelection.AttributeSelection"/>
+    <fullyQualifiedTypeName name="weka.attributeSelection.InfoGainAttributeEval"/>
+    <fullyQualifiedTypeName name="weka.attributeSelection.Ranker"/>
+    <fullyQualifiedTypeName name="weka.classifiers.trees.J48"/>
+    <fullyQualifiedTypeName name="weka.core.Utils"/>
+    <fullyQualifiedTypeName name="weka.core.Instance"/>
+    <fullyQualifiedTypeName name="weka.core.DenseInstance"/>
+    <fullyQualifiedTypeName name="weka.classifiers.Classifier"/>
+    <fullyQualifiedTypeName name="weka.classifiers.evaluation.Evaluation"/>
+    <fullyQualifiedTypeName name="weka.core.converters.CSVLoader"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="weka.classifiers.functions.LinearRegression"/>
+    <fullyQualifiedTypeName name="weka.classifiers.Evaluation"/>
+    <fullyQualifiedTypeName name="weka.classifiers.trees.M5P"/>
+    <fullyQualifiedTypeName name="weka.clusterers.ClusterEvaluation"/>
+    <fullyQualifiedTypeName name="weka.core.Debug.Random"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="weka.core.converters.ConverterUtils.DataSource"/>
+    <fullyQualifiedTypeName name="weka.clusterers.SimpleKMeans"/>
+    <fullyQualifiedTypeName name="weka.filters.unsupervised.attribute.Remove"/>
+    <fullyQualifiedTypeName name="weka.filters.Filter"/>
+    <fullyQualifiedTypeName name="java.awt.BufferCapabilities"/>
+    <fullyQualifiedTypeName name="weka.core.Instances"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="weka.associations.Apriori"/>
+    <fullyQualifiedTypeName name="weka.associations.FPGrowth"/>
+</qualifiedTypeNameHistroy>

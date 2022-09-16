@@ -1,0 +1,48 @@
+
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import weka.associations.Apriori;
+import weka.associations.FPGrowth;
+import weka.core.Instances;
+
+@WebServlet("/HW06SupermarketWeb")
+public class HW06SupermarketWeb extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public HW06SupermarketWeb() {
+        super();
+    }
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// load data
+				Instances data = new Instances(new BufferedReader(new FileReader("C:\\MachineLearning\\workspace\\Homework\\src\\main\\webapp\\data\\supermarket.arff")));
+				// build model
+				Apriori model = new Apriori();
+				try {
+					model.buildAssociations(data);
+					System.out.println(model);
+					response.getWriter().write(model.toString());
+					
+					FPGrowth fpgModel = new FPGrowth();		
+					fpgModel.buildAssociations(data);
+					System.out.println(fpgModel);
+					response.getWriter().write(fpgModel.toString());
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		doGet(request, response);
+	}
+
+}
